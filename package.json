@@ -25,7 +25,9 @@
 
   "dependencies": {
     "hubot":         ">= 2.6.0 < 3.0.0",
-    "hubot-scripts": ">= 2.5.0 < 3.0.0"
+    "hubot-scripts": ">= 2.5.0 < 3.0.0",
+    "node-stringprep": ">= 0.1.0",
+    "hubot-gtalk":   "git://github.com/atmos/hubot-gtalk.git"
   },
 
   "engines": {
