@@ -21,9 +21,9 @@
 
 
 module.exports = (robot) ->
-  robot.router.post '/hubot/post_debug', (req, res) ->
+  robot.router.post '/hubot/message', (req, res) ->
     data = req.body
-    if user = robot.brain.data.users[data.user]
+    if data.user? and user = robot.brain.data?.users?[data.user]
       robot.send({user: user}, data.message)
       res.send 'Sent'
     else
